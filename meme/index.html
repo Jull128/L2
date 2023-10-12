@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>meme generator in Javascript</title>
+  <link rel="stylesheet" href="style.css" />
+</head>
+<body>
+  <div class="container">
+    <div class="meme-header">
+      <h1>Meme</h1>
+    </div>
+    <div class="meme-section">
+      <div class="meme-generator">
+        <canvas id="meme"></canvas>
+      </div>
+      <div class="meme-input-section">
+        <div class="input-file-section">
+          <input type="file" id="imageFileInput" />
+          <label for="imageFileInput">
+              <svg
+                stroke="currentColor"
+                fill="currentColor"
+                stroke-width="0"
+                viewBox="0 0 24 24"
+                class="rW1DZNdb5THuH-xexbQ-9"
+                style="vertical-align: middle"
+                height="1em"
+                width="1em"
+                xmlns="http://www.w3.org/2000/svg"
+              >
+                <path d="M9 16h6v-6h4l-7-7-7 7h4zm-4 2h14v2H5z"></path>
+              </svg>
+              Choose a File
+            </label>
+          </label>
+        </div>
+        <div class="text-section">
+          <div class="top-text">
+            <input type="text" id="topTextInput" placeholder="Top Text" />
+          </div>
+          <div class="bottom-text">
+            <input type="text" id="bottomTextInput" placeholder="Bottom Text" />
+          </div>
+          <div class="button_section">
+            <button type="button" id="export">Download</button>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+<script src="index.js"></script>
+</body>
+</html>

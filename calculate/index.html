@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <title>Отслеживание калорий</title>
+    <link rel="stylesheet" type="text/css" href="styles.css" />
+  </head>
+  <body>
+    <h1>Отслеживание калорий</h1>
+
+    <div id="calculator">
+      <h2>Калькулятор калорий</h2>
+      <input type="text" id="foodName" placeholder="Название продукта" />
+      <input type="number" id="calories" placeholder="Калории" />
+      <button id="addFood">Добавить продукт</button>
+    </div>
+
+    <div id="caloriesList">
+      <h2>Список продуктов</h2>
+      <input type="text" id="filter" placeholder="Фильтр по названию" />
+      <button id="filterButton">Фильтровать</button>
+      <button id="sortByName">Сортировать по имени</button>
+      <button id="sortByCalories">Сортировать по калориям</button>
+      <button id="clearData">Очистить данные</button>
+      <ul id="foodItems"></ul>
+    </div>
+
+    <div id="summary">
+      <h2>Итог</h2>
+      <p>Съедено калорий: <span id="totalCalories">0</span></p>
+      <p id="warning"></p>
+      <p>
+        Цель на день: <span id="dailyGoal">2000</span>
+        <button id="changeGoal">Изменить</button>
+      </p>
+      <p id="warning"></p>
+    </div>
+
+    <script src="index.js"></script>
+  </body>
+</html>
